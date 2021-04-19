@@ -1,0 +1,26 @@
+@mixin card {
+    display: flex;
+    position: relative;
+    border-radius: 5px;
+  }
+  
+  @mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  @mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  @mixin button-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
