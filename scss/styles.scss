@@ -2,6 +2,9 @@ $bgColor: #f5f5f7;
 $bgHeader: #243040;
 $bgContent: #fff;
 $bgFooter: transparent;
+$bgBlue: #0056FE;
+$bgDark: #1E2329;
+$colorDetails: rgba(0,87,255,0.3);
 
 * {
     margin: 0;
@@ -154,6 +157,13 @@ $bgFooter: transparent;
       }
     }
   
+
+  .overview {
+    .wallet {
+      margin-right: 10px;
+    }
+  }
+    
    
  /*Sections*/
   
@@ -183,15 +193,14 @@ $bgFooter: transparent;
     padding-bottom: 15px;
     border-bottom: 2px solid transparent;
     transition: font-size 0.2s ease;
-    &:hover,
-    &:hover {
+  }
+  
+  .tab1 a:hover,
+  .tab2 a:hover {
     transform: scale(1.3);
     border-bottom: 2px solid rgba(0, 87, 255, 1);
     cursor: pointer;
   }
-  }
-  
-  
 
   .tab1 {
     margin-right: 10px;
@@ -250,12 +259,19 @@ $bgFooter: transparent;
   .recomended {
     padding-top: 20px;
   }
+
+
   
   .card {
     display: flex;
     position: relative;
     border-radius: 5px;
     margin-bottom: 20px;
+  }
+
+  .card1 {
+    margin-top: 20px;
+    border: 1px solid rgba(0, 87, 255, 1);
   }
   
   .card1::before {
@@ -266,7 +282,7 @@ $bgFooter: transparent;
     right: -17px;
     width: 50px;
     height: 50px;
-    background-image: url('./images/poligon.png');
+    background-image: url('../images/poligon.png');
     background-size: 50px 50px;
     background-repeat: no-repeat;
     background-position: right;
@@ -280,14 +296,9 @@ $bgFooter: transparent;
     right: -36px;
     width: 50px;
     height: 50px;
-    background-image: url('./images/Vector.png');
+    background-image: url('../images/Vector.png');
     background-size: 10px 10px;
     background-repeat: no-repeat;
-  }
-  
-  .card1 {
-    margin-top: 20px;
-    border: 1px solid rgba(0, 87, 255, 1);
   }
   
   .card2 {
@@ -323,7 +334,7 @@ $bgFooter: transparent;
     display: flex;
     align-items: center;
     font-size: 14px;
-    background-color: rgba(0, 87, 255, 0.3);
+    background-color: $colorDetails;
     padding: 10px;
     border-radius: 3px;
     margin-bottom: 30px;
@@ -375,7 +386,7 @@ $bgFooter: transparent;
   
   .section2__button {
     width: 100%;
-    background-color: rgba(0, 87, 255, 0.3);
+    background-color: $colorDetails;
     text-align: center;
     padding: 10px;
     border-radius: 3px;
@@ -395,6 +406,7 @@ $bgFooter: transparent;
   
   footer {
     padding: 20px;
+    background-color: $bgFooter;
   }
   
   .footer-menu {
@@ -457,11 +469,10 @@ $bgFooter: transparent;
     padding: 10px;
     margin-right: 20px;
     font-size: 14px;
+    
   }
   
-  .select-lang:active {
-    border: 0;
-  }
+  
   
   .copyright-text {
     text-align: center;
