@@ -52,14 +52,11 @@ $bgColor: #f5f5f7;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .logo {
+    .logo {
     width: 150px;
     height: 50px;
     margin-right: 1rem;
   }
-  
   .line {
     display: block;
     width: 1px;
@@ -67,29 +64,29 @@ $bgColor: #f5f5f7;
     background-color: white;
     margin-right: 2.5rem;
   }
-  
   .icon-app {
     width: 25px;
     height: 25px;
-  }
-  
-  .icon-app img {
+    img {
     width: 100%;
     font-size: 0;
+     }
+    }
   }
   
   .right {
     display: flex;
     flex-direction: row;
-  }
-  
-  .buttons {
+    .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 0.5rem;
     cursor: pointer;
+    }
   }
+  
+  
   
   .btn {
     width: 80px;
@@ -106,7 +103,9 @@ $bgColor: #f5f5f7;
     background-color: rgba(0, 87, 255, 1);
     border: 1px solid transparent;
     transition: all 0.3s ease;
+    
   }
+  
   }
   .btn.active {
     background-color: rgba(0, 87, 255, 1);
@@ -126,16 +125,12 @@ $bgColor: #f5f5f7;
     width: 30px;
     height: 30px;
     margin: 0 10px;
-    }
-  
-  .burger img {
+    img {
     display: block;
     width: 100%;
+    }
   }
   
-  .overview {
-    
-  }
   
   .header-menu {
     border-top: 0.2px solid rgba(146, 154, 165, 0.8);
