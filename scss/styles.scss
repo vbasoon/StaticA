@@ -44,7 +44,7 @@ header {
 
 }
 
-.row.top {
+.top-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -91,13 +91,13 @@ header {
 
   .buttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-grow: 1;
-    flex-shrink: 1;
-    margin-right: 10px;
     cursor: pointer;
-
+@include _436 {
+  flex-direction: column;
+  padding: 10px;
+}
   }
 
   .burger {
@@ -131,9 +131,11 @@ header {
     transition: all 0.3s ease;
   }
 
-  &:last-child {
-    margin-left: 20px;
- 
+  &:first-child {
+    margin-right: 20px;
+    @include _436 {
+      margin-right: 0px;
+    }
   }
 }
 
