@@ -37,6 +37,10 @@ header {
   background: $bgHeader;
 }
 
+.container {
+  padding: 0;
+}
+
 .header__container {
   display: flex;
   flex-direction: column;
@@ -88,7 +92,10 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
+  @include _436 {
+    flex-direction: row;
+    
+  }
   .buttons {
     display: flex;
     justify-content: space-between;
@@ -96,7 +103,7 @@ header {
     cursor: pointer;
 @include _436 {
   flex-direction: column;
-  padding: 10px;
+  padding:10px 0;
 }
   }
 
@@ -124,6 +131,9 @@ header {
   border-radius: .5rem;
   border: 1px solid rgba(0, 87, 255, 1);
   cursor: pointer;
+  @include _436 {
+    padding: 0px 10px;
+  }
 
   &:hover {
     background-color: rgba(0, 87, 255, 1);
@@ -135,6 +145,7 @@ header {
     margin-right: 20px;
     @include _436 {
       margin-right: 0px;
+      margin-bottom: 10px;
     }
   }
 }
@@ -153,6 +164,10 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  @include _436 {
+    justify-content: space-around;
+    padding: 10px;
+  }
 
   li {
     list-style-type: none;
