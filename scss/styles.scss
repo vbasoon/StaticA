@@ -37,7 +37,7 @@ header {
   background: $bgHeader;
 }
 
-.container {
+.header__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -49,10 +49,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-  @include _436 {
-    justify-content: flex-start;
-  }
 }
 
 .left {
@@ -60,20 +56,12 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-  @include _436 {
-    justify-content: flex-start;
-  }
-
+  
   .logo {
     width: 150px;
     height: 50px;
     margin-right: 10px;
-
-    @include _436 {
-      margin-right: 0px;
-      width: 80%;
-    }
+    
   }
 
   .line {
@@ -83,19 +71,11 @@ header {
     background-color: white;
     margin-right: 20px;
 
-    @include _436 {
-      display: none;
-    }
-
   }
 
   .icon-app {
     width: 25px;
     height: 25px;
-
-    @include _436 {
-      display: none;
-    }
 
     img {
       width: 100%;
@@ -109,10 +89,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
 
-  @include _436 {
-    justify-content: flex-start;
-  }
-
   .buttons {
     display: flex;
     justify-content: center;
@@ -121,10 +97,6 @@ header {
     flex-shrink: 1;
     margin-right: 10px;
     cursor: pointer;
-
-    @include _436 {
-      margin-right: 0px;
-    }
 
   }
 
@@ -161,10 +133,7 @@ header {
 
   &:last-child {
     margin-left: 20px;
-
-    @include _436 {
-      margin-left: 5px;
-    }
+ 
   }
 }
 
@@ -182,11 +151,6 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-
-  @include _436 {
-    justify-content: flex-start;
-    padding: 10px 15px
-  }
 
   li {
     list-style-type: none;
@@ -384,7 +348,7 @@ section {
 
 .card2 {
   border: 0.5px solid #c5c5c5;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .section2 {
